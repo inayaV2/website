@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CADZY ACADEMY</title>
+    <link
+      rel="website icon"
+      type="src"
+      href="file:///C:/Users/ASUS/Downloads/Logo%20cadzy.png"
+    />
+    <style>
+        /* Styling untuk body */
+        body {
+          margin: 0;
+          padding: 0;
+          font-family: Arial, sans-serif;
+          background-color: #6a1b9a; /* Warna ungu */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          overflow: hidden;
+        }
+  
+        /* Container untuk bumper */
+        #bumper {
+          text-align: center;
+          color: white;
+        }
+  
+        /* Animasi untuk teks */
+        #bumper h1 {
+          font-size: 3rem;
+          animation: fadeIn 2s ease-in-out, zoomIn 2s ease-in-out;
+        }
+  
+        /* Animasi fadeIn */
+        @keyframes fadeIn {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+  
+        /* Animasi zoomIn */
+        @keyframes zoomIn {
+          0% {
+            transform: scale(0.5);
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
+  
+  /* Container untuk gambar */
+  .image-container {
+      text-align: center;
+  }
+  
+  /* Styling untuk gambar */
+  .image-container img {
+      width: 200px; /* Ukuran gambar */
+      margin: 20px;
+  }
+  
+  /* Animasi Fade In */
+  .fade-in {
+      animation: fadeIn 2s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+  }
+  
+        /* Konten utama (disembunyikan awalnya) */
+        #main-content {
+          display: none;
+          padding: 20px;
+          text-align: center;
+        }
+      </style>
+    </head>
+    <body>
+      <!-- Bumper Pembuka -->
+      <div id="bumper">
+        <h1>CADZY ACADEMY</h1>
+      </div>
+  
+      <!-- Konten Utama -->
+      <div id="main-content">
+          <div class="image-container">
+              <!-- Gambar dengan animasi Fade In -->
+              <img src="file:///C:/Users/ASUS/Downloads/Logo%20cadzy.png" alt="Gambar Fade In" class="fade-in">
+        <h2>Welcome to CADZY ACADEMY</h2>
+        <p>Click the website button.</p>
+        <a
+          href="file:///C:/Users/ASUS/OneDrive/Documents/Website%20Cadzzy/index.html#"
+          class="button"
+          >WEBSITE</a
+        >
+  
+        <style>
+          .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #d7d2da;
+            color: rgb(6, 1, 1);
+            text-decoration: none;
+            border-radius: 5px;
+          }
+          .button:hover {
+            background-color: #dccfdf;
+          }
+        </style>
+      </div>
+  
+      <script>
+        // Fungsi untuk menghilangkan bumper dan menampilkan konten utama
+        setTimeout(() => {
+          // Sembunyikan bumper
+          document.getElementById("bumper").style.display = "none";
+          // Tampilkan konten utama
+          document.getElementById("main-content").style.display = "block";
+        }, 3000); // Bumper akan hilang setelah 3 detik
+      </script>
+    </body>
+  </html>
